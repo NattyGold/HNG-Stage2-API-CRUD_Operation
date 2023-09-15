@@ -31,7 +31,7 @@ def get_personByID(id):
 
 # READ - GET ALL PERSON
 @app.route("/api/person", methods=["GET"])
-def get_allPerson(id):
+def get_allPerson():
     person = Person.query.get.all()
     if person is None:
         abort(404)
