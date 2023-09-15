@@ -1,8 +1,8 @@
-### Person API
+#### Person API
 
-## Introduction
+### Introduction
 #  HNG Backend Stage Two Task
-You are to build a simple REST API capable of CRUD operations on a "person" resource, interfacing with any database of your choice. Your API should dynamically handle parameters, such as adding or retrieving a person by name. Accompany the development with UML diagrams to represent your system's design and database structure. Host your entire project on GitHub, and provide a well-structured documentation in the repository that outlines request/response formats, setup instructions, and sample API usage
+You are to build a simple REST API capable of CRUD operations on a "person" resource, interfacing with any database you choose. Your API should dynamically handle parameters, such as adding or retrieving a person by name. Accompany the development with UML diagrams to represent your system's design and database structure. Host your entire project on GitHub, and provide well-structured documentation in the repository that outlines request/response formats, setup instructions, and sample API usage
 
 ## Task Breakdown: Develop a REST API with Basic CRUD Operation
 
@@ -40,7 +40,7 @@ pip install Flask
 │   ├── __init__.py
 │   ├── models.py
 │   └── routes.py
-├── person.py
+├── run.py
 ├── config.py
 ```
 
@@ -48,12 +48,12 @@ pip install Flask
 
 ** config.py has the configuration for the API.
 ** app/__init__.py is the file that contains database and application ** instances.
-** app/models.py contains the database schema and the ORM.
-** app/routes.py contains the API functions that the API will invoke.
+** app/models.py includes the database schema and the ORM.
+** app/routes.py has the API functions that the API will invoke.
 
 
 ## Instructions
-1. Make sure you have python installed
+1. Make sure you have Python installed
 2. Install all dependencies. pip install -r requirements.txt
 3. set the database URL to the environment variable ``         DEV_DATABASE_URL,   which is the URL for the POSTGRES database. 
 4. Run the following command on your terminal to define that env var:
@@ -68,8 +68,8 @@ $  set DEV_DATABASE_URL=postgresql://postgres:admin@localhost:5432/persondb
 1. **Download the project starter code locally**
 
 ```
-git clone https://github.com/nattygold/hng-stage2.git
-cd hng-stage2
+git clone https://github.com/nattygold/HNG-Stage2-API-CRUD_Operation.git
+cd HNG-Stage2-API-CRUD_Operation
 
 2. **Initialize and activate a virtualenv using:**
 ```
