@@ -32,11 +32,18 @@ def get_personByID(id):
 # READ - GET ALL PERSON
 @app.route("/api/person", methods=["GET"])
 def get_allPerson():
-    person = Person.query.get.all()
-    if person is None:
-        abort(404)
-    return jsonify(person.to_json())
-
+    persons = Person.query.all()
+    output = []
+    for person in persons:
+        person_data = { 
+            'id': person.id,
+            'first_name': person.first_name,
+            'last_name': person.last_name,
+            'age': person.age
+            }
+        output.append(person_data)  
+    return {"persons":output}
+    
 #  UPDATE
 @app.route('/api/person/update/<int:id>', methods=['PUT'])
 def update_person(id):
