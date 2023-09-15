@@ -29,6 +29,14 @@ def get_personByID(id):
         abort(404)
     return jsonify(person.to_json())
 
+# READ - GET ALL PERSON
+@app.route("/api/person", methods=["GET"])
+def get_allPerson(id):
+    person = Person.query.get.all()
+    if person is None:
+        abort(404)
+    return jsonify(person.to_json())
+
 #  UPDATE
 @app.route('/api/person/update/<int:id>', methods=['PUT'])
 def update_person(id):
