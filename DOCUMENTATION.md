@@ -1,7 +1,7 @@
 ##  API Documentation
 #   This documentation provides information about the API endpoints available in the code snippet provided.
 #   Base URL
-    The base URL for accessing the API endpoints is `http://localhost:5000/`.
+    The base URL for accessing the API endpoints is `https://natty-crud-api.onrender.com/api/person`.
 
 ###   1. Create a Person
 **Endpoint:** `/api/person`
