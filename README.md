@@ -2,7 +2,7 @@
 
 ### Introduction
 #  HNG Backend Stage Two Task
-You are to build a simple REST API capable of CRUD operations on a "person" resource, interfacing with any database you choose. Your API should dynamically handle parameters, such as adding or retrieving a person by name. Accompany the development with UML diagrams to represent your system's design and database structure. Host your entire project on GitHub, and provide well-structured documentation in the repository that outlines request/response formats, setup instructions, and sample API usage
+Here is a REST API capable of CRUD operations on a "person" resource, interfacing with any database you choose. Your API should dynamically handle parameters, such as adding or retrieving a person by name. Accompany the development with UML diagrams to represent your system's design and database structure. Host your entire project on GitHub, and provide well-structured documentation in the repository that outlines request/response formats, setup instructions, and sample API usage
 
 ## Task Breakdown: Develop a REST API with Basic CRUD Operation
 
@@ -59,7 +59,7 @@ pip install Flask
 4. Run the following command on your terminal to define that env var:
 $  set DEV_DATABASE_URL=postgresql://postgres:admin@localhost:5432/persondb
 #  let's configure our flask app environment variable using this command:
-5. $ SET FLASK_APP=person.py
+5. $ SET FLASK_APP=run.py
 6. $ SET FLASK_ENV=development
 7. $ SET flask run
 
