@@ -5,7 +5,7 @@ from flask import jsonify, request,abort
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 app.app_context().push()
-db.create_all()
+# db.create_all()
 
 # CREATE 
 @app.route('/api/person', methods=['POST'])
